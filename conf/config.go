@@ -11,11 +11,11 @@ var (
 	HttpPort string
 
 	Db         string
-	DbHost     = string
-	DbPort     = string
-	DbUser     = string
-	DbPassword = string
-	DbName     = string
+	DbHost     string
+	DbPort     string
+	DbUser     string
+	DbPassword string
+	DbName     string
 
 	RedisDb     string
 	RedisAddr   string
@@ -32,7 +32,7 @@ var (
 	AvatarPath  string
 )
 
-func init() {
+func Init() {
 	//本地读取环境变量
 	file, err := ini.Load("conf/conf.ini")
 	if err != nil {

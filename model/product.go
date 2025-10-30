@@ -1,0 +1,20 @@
+package model
+
+import "gorm.io/gorm"
+
+// 商品
+type Product struct {
+	gorm.Model
+	Name          string
+	Category      uint
+	Title         string
+	Info          string
+	ImgPath       string
+	Price         string
+	DiscountPrice string
+	OnSale        bool `gorm:"default:false"`
+	Num           int
+	BossId        uint
+	BossName      string
+	BossAvarar    string
+}

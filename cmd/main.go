@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"gin_mall/conf"
+)
 
 func main() {
-	fmt.Println("hello world")
+	conf.Init()
 }

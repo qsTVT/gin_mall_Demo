@@ -2,6 +2,7 @@ package model
 
 import "gorm.io/gorm"
 
+// 收货地址
 type Address struct {
 	gorm.Model
 	UerID   int    `gorm:"not null"`
